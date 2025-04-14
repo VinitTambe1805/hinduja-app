@@ -14,29 +14,46 @@
         android:orientation="vertical">
 
 
-    <SearchView
-        android:id="@+id/search_bar2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="18dp"
-        android:queryHint="Search By Doctors,Speciality,Services"
-        app:layout_constraintStart_toStartOf="parent"/>
+        <SearchView
+            android:id="@+id/search_bar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="18dp"
+            android:queryHint="Search By Doctors,Speciality,Services" />
 
+        <!--<androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp">-->
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/img2">
 
-   <androidx.recyclerview.widget.RecyclerView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginTop="70dp"
-       android:layout_marginLeft="30dp"
-       android:layout_marginStart="20dp"
-       android:id="@+id/recyclerView"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            </LinearLayout>
+
+<!--        </androidx.cardview.widget.CardView>-->
 
 
     </LinearLayout>
-
 
 
 </RelativeLayout>
