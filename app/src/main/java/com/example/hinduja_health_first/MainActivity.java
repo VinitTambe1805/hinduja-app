@@ -47,7 +47,18 @@ public class  MainActivity extends AppCompatActivity {
                 String item = adapterView.getItemAtPosition(i).toString();
                 Toast.makeText(MainActivity.this, "Hospital:" + item, Toast.LENGTH_SHORT).show();
 
+                bookAppoint.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(MainActivity.this, RecycleActivity.class);
+                        startActivity(i);
+
+                    }
+                });
+
             }
+
+
 
         });
     }
