@@ -43,6 +43,7 @@ public class loginActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
         reference = FirebaseDatabase.getInstance().getReference("users");
         createAccount = findViewById(R.id.createAccount);
+        TextView forgotPassword = findViewById(R.id.text2);
 
         reference = FirebaseDatabase.getInstance().getReference("users");
 
@@ -86,6 +87,11 @@ public class loginActivity extends AppCompatActivity {
             Intent intent = new Intent(loginActivity.this,SignUp_activity.class);
             startActivity(intent);
 
+        });
+
+        forgotPassword.setOnClickListener(v ->{
+           Intent intent = new Intent(loginActivity.this,ForgetPasswordActivity.class);
+            startActivity(intent);
         });
     }
 }
